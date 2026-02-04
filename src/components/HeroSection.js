@@ -1,7 +1,6 @@
 import React from "react";
 import "../Style/HeroSection.css";
 import heroImg from "../images/hero-man.png";
-import { Link } from "react-router-dom";
 
 const HeroSection = ({ scrollToUpcoming }) => {
   return (
@@ -18,17 +17,16 @@ const HeroSection = ({ scrollToUpcoming }) => {
           </p>
 
           <div className="hero-buttons">
-          <a
-  href="https://your-registration-link.com"
-  className="btn register"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Register Now
-</a>
+            <a
+              href="https://nimacademy.in/Webinar-registration"
+              className="btn register"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Now
+            </a>
 
-
-            {/* 🔥 SCROLL BUTTON */}
+            {/* ✅ THIS WILL NOW WORK */}
             <button
               className="btn upcoming"
               onClick={scrollToUpcoming}

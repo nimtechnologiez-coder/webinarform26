@@ -25,21 +25,21 @@ const UpcomingWebinar = () => {
           </ul>
 
           <div className="webinar-buttons">
-        <a
-  href="https://your-register-link.com"
-  className="btn primary"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Register Now
-</a>
+            <a
+              href="https://your-register-link.com"
+              className="btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Now
+            </a>
 
-<a
-  href="#show-more"
-  className="btn secondary"
->
-  Show More
-</a>
+            <a
+              href="/about"
+              className="btn secondary"
+            >
+              Show More
+            </a>
 
           </div>
         </div>

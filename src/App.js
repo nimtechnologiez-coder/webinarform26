@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,24 +16,40 @@ import Hero from "./components/hero";
 import Learn from "./components/learn";
 import DifferenceSection from "./components/diffsec";
 
+/* ✅ HOME PAGE */
+const Home = () => {
+  const upcomingRef = useRef(null);
+
+  const scrollToUpcoming = () => {
+    upcomingRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <>
+      <Navbar />
+      <HeroSection scrollToUpcoming={scrollToUpcoming} />
+      <WhyJoin />
+
+      {/* 👇 TARGET SECTION */}
+      <div ref={upcomingRef}>
+        <UpcomingWebinar />
+      </div>
+
+      <WhatYouLearn />
+      <IncludedForAttendees />
+      <Footer />
+    </>
+  );
+};
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <>
-        <Navbar />
-        <HeroSection />
-        <WhyJoin />
-        <UpcomingWebinar />
-        <WhatYouLearn />
-        <IncludedForAttendees />
-        <Footer />
-      </>
-    ),
+    element: <Home />,
   },
-
-
-   {
+  {
     path: "/about",
     element: (
       <>
