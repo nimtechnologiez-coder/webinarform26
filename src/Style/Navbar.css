@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 90px;
+  background: linear-gradient(90deg, #b9ff5f 0%, #1f8acb 100%);
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: #0077ff;
+}
+
+.logo span {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+  font-weight: 700;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* Mobile Side Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #b9ff5f, #1f8acb);
+  padding: 40px 20px;
+  transition: left 0.4s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.show {
+  left: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+}
+
+.mobile-menu li {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.close {
+  font-size: 32px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Navbar Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 52px;
+  height: auto;
+}
+
+.logo-text h2 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: #0077ff;
+}
+
+.logo-text span {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* MOBILE LOGO SCALE */
+@media (max-width: 768px) {
+  .logo img {
+    width: 44px;
+  }
+}
+/* ===============================
+   REMOVE LINK UNDERLINE
+================================ */
+.navbar a,
+.mobile-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional: keep cursor consistent */
+.navbar a:hover,
+.mobile-menu a:hover {
+  text-decoration: none;
+}

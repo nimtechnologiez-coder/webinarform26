@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SECTION */
+.upcoming-wrapper {
+  padding: 80px 90px;
+  background: #f9fbfb;
+}
+
+.upcoming-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #2ecc71, #1abc9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARD */
+.webinar-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* CONTENT */
+.webinar-content {
+  max-width: 650px;
+}
+
+.webinar-content h1 {
+  font-size: 44px;
+  color: #1f6f8b;
+  margin-bottom: 20px;
+}
+
+.webinar-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.webinar-points {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.webinar-points li {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.webinar-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(180deg, #4facfe, #43e97b);
+  color: #fff;
+}
+
+.btn.secondary {
+  background: linear-gradient(180deg, #a1ffce, #faffd1);
+}
+
+/* IMAGE */
+.webinar-image {
+  position: relative;
+  text-align: center;
+}
+
+.webinar-image img {
+  width: 300px;
+  
+}
+
+/* SPEAKER BADGE */
+.speaker-badge {
+  margin-top: -3px;
+  background: linear-gradient(90deg, #22c1c3, #2ecc71);
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .upcoming-wrapper {
+    padding: 60px 50px;
+  }
+
+  .webinar-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .webinar-content h1 {
+    font-size: 36px;
+  }
+
+  .webinar-image img {
+    width: 260px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .upcoming-wrapper {
+    padding: 40px 25px;
+  }
+
+  .upcoming-title {
+    font-size: 32px;
+  }
+
+  .webinar-content p {
+    font-size: 16px;
+  }
+
+  .webinar-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,204 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===============================
+   INCLUDED SECTION
+================================ */
+.included-section {
+  padding: 80px 90px 100px;
+  background: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* TITLE */
+.included-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 70px;
+  background: linear-gradient(90deg, #1f8acb, #7ddf64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRID */
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 40px;
+  justify-items: center;
+}
+
+/* ITEM */
+.included-item p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 18px;
+  line-height: 1.4;
+}
+
+/* ICON */
+.icon-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(180deg, #1f8acb, #7ddf64) border-box;
+  border: 5px solid transparent;
+}
+
+.icon-circle svg {
+  font-size: 42px;
+  background: linear-gradient(180deg, #1f8acb, #7ddf64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   LIMITED BANNER
+================================ */
+.banner-wrapper {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.limited-banner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 34px 60px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+
+  background: linear-gradient(90deg, #a8ef61 0%, #0b5d7a 100%);
+  border-radius: 0 90px 90px 0;
+  transform: skewX(-6deg);
+  box-shadow: 0 10px 0 #9be15d;
+}
+
+.limited-banner span {
+  display: inline-block;
+  transform: skewX(6deg);
+}
+
+/* ===============================
+   RIBBON
+================================ */
+.ribbonss-wrapper {
+  max-width: 800px;
+  margin: 100px auto 60px;
+  padding: 0 16px;
+  overflow-x: hidden;
+}
+
+.ribbonss {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: clamp(18px, 4vw, 35px) clamp(40px, 12vw, 250px);
+  border-radius: 0 45px 1px 0;
+  transform: skewX(-12deg);
+}
+
+.ribbonss p {
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  transform: skewX(12deg);
+}
+
+.ribbonss-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 96%;
+  margin: -2px auto 0;
+  border-radius: 5px;
+  transform: skewX(-8deg);
+}
+
+/* ===============================
+   RESPONSIVE – TABLET
+================================ */
+@media (max-width: 1024px) {
+  .included-section {
+    padding: 60px 50px 80px;
+  }
+
+  .included-title {
+    font-size: 34px;
+  }
+
+  .included-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .limited-banner {
+    font-size: 24px;
+    padding: 28px 40px;
+    max-width: 900px;
+  }
+}
+
+/* ===============================
+   RESPONSIVE – MOBILE
+================================ */
+@media (max-width: 768px) {
+  .included-section {
+    padding: 50px 30px;
+  }
+
+  .included-title {
+    font-size: 28px;
+  }
+
+  .included-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .included-item p {
+    font-size: 18px;
+  }
+
+  .limited-banner {
+    transform: none;
+    border-radius: 24px;
+    font-size: 20px;
+    padding: 22px 28px;
+    box-shadow: 0 6px 0 #9be15d;
+  }
+
+  .limited-banner span {
+    transform: none;
+  }
+
+  .ribbonss {
+    padding: 18px 20px;
+    transform: skewX(-8deg);
+    text-align: center;
+  }
+
+  .ribbonss p {
+    font-size: 16px;
+    transform: skewX(8deg);
+  }
+
+  .ribbonss-shadow {
+    height: 6px;
+  }
+}

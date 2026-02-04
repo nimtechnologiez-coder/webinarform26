@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+.difference-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.difference-title {
+  font-size: 46px;
+  font-weight: 700;
+  font-family: 'poppins';
+   background: linear-gradient(90deg, #1F84B5, #90DA72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.difference-sub {
+  font-size: 30px;
+  margin: 6px 0;
+  font-family: 'poppins';
+  font-weight: 400;
+  text-align: justify;
+}
+
+
+
+/* GRID */
+.difference-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.difference-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 26px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.diff-num {
+  font-size: 102px;
+  font-weight: 700;
+  font-family: 'poppins';
+  background: linear-gradient(90deg, #1F84B5, #90DA72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.diff-text {
+  font-size: 29px;
+  font-weight: 600;
+  color: #000;
+  font-family: 'poppins';
+  max-width: 220px;
+}
+/* ============================
+   RIBBON
+============================ */
+.ribbonss-wrapper {
+  width: 800px;
+  max-width: 2000px;
+  margin: 100px auto 60px;
+  padding: 0 16px;
+}
+
+.ribbonss {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: clamp(18px, 4vw, 35px) clamp(40px, 12vw, 250px);
+  border-radius: 0 45px 1px 0;
+  transform: skewX(-12deg);
+}
+
+.ribbonss p {
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  transform: skewX(12deg);
+}
+
+.ribbonss-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 96%;
+  margin: -2px auto 0;
+  border-radius: 5px;
+  transform: skewX(-8deg);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .difference-title {
+    font-size: 22px;
+  }
+
+  .difference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .difference-card {
+    padding: 20px;
+  }
+
+  .diff-num {
+    font-size: 36px;
+  }
+}
+
+/* Small Mobile (320px safe) */
+@media (max-width: 480px) {
+  .difference-title {
+    font-size: 20px;
+  }
+
+  .diff-text {
+    font-size: 15px;
+  }
+}
+
+
+
+/* ============================
+   RESPONSIVE — MOBILE FIRST
+============================ */
+
+/* MOBILE — 320px to 480px */
+@media (max-width: 480px) {
+
+  .ribbonss-wrapper {
+    width: 100%;
+    margin: 60px auto 40px;
+    padding: 0 12px;
+  }
+
+  .ribbonss {
+    padding: 18px 20px;
+    transform: skewX(-8deg);
+    text-align: center;
+  }
+
+  .ribbonss p {
+    white-space: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    transform: skewX(8deg);
+  }
+
+  .ribbonss-shadow {
+    width: 96%;
+    height: 6px;
+  }
+}
+
+/* ============================
+   TABLET — 600px to 768px
+============================ */
+@media (min-width: 600px) and (max-width: 768px) {
+
+  .ribbonss-wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .ribbonss {
+    padding: 20px 50px;
+    transform: skewX(-10deg);
+  }
+
+  .ribbonss p {
+    font-size: 20px;
+    transform: skewX(10deg);
+  }
+   .ribbonss-shadow {
+    width: 98%;
+    height: 6px;
+  }
+}
+
+/* ============================
+   TABLET LARGE — 768px to 992px
+============================ */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .ribbonss-wrapper {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .ribbonss {
+    padding: 25px 90px;
+  }
+
+  .ribbonss p {
+    font-size: 22px;
+  }
+}
+
+/* ============================
+   LAPTOP SMALL — 1024px width
+============================ */
+@media (min-width: 1024px) and (max-width: 1100px) {
+
+  .ribbonss-wrapper {
+    max-width: 900px;
+  }
+
+  .ribbonss {
+    padding: 28px 120px;
+    transform: skewX(-12deg);
+  }
+
+  .ribbonss p {
+    font-size: 24px;
+    transform: skewX(12deg);
+  }
+
+  .ribbonss-shadow {
+    width: 98%;
+    height: 8px;
+  }
+}
+
+/* ============================
+   LAPTOP MEDIUM — 1280px width
+============================ */
+@media (min-width: 1200px) and (max-width: 1366px) {
+
+  .ribbonss-wrapper {
+    max-width: 1100px;
+  }
+
+  .ribbonss {
+    padding: 30px 140px;
+  }
+
+  .ribbonss p {
+    font-size: 26px;
+  }
+}
+
+/* ============================
+   LAPTOP LARGE — 1366px to 1600px
+============================ */
+@media (min-width: 1366px) and (max-width: 1600px) {
+
+  .ribbonss-wrapper {
+    max-width: 1300px;
+  }
+
+  .ribbonss {
+    padding: 32px 180px;
+    transform: skewX(-10deg);
+  }
+
+  .ribbonss p {
+    font-size: 28px;
+    transform: skewX(10deg);
+  }
+}
+
+/* ============================
+   DESKTOP — 1600px to 1920px
+============================ */
+@media (min-width: 1600px) and (max-width: 1920px) {
+
+  .ribbonss-wrapper {
+    max-width: 1500px;
+  }
+
+  .ribbonss {
+    padding: 36px 220px;
+  }
+
+  .ribbonss p {
+    font-size: 32px;
+  }
+
+  .ribbonss-shadow {
+    width: 90%;
+  }
+}
+
+/* ============================
+   ULTRA-WIDE — 1920px to 2560px
+============================ */
+@media (min-width: 1920px) {
+
+  .ribbonss-wrapper {
+    max-width: 1700px;
+  }
+
+  .ribbonss {
+    padding: 40px 260px;
+  }
+
+  .ribbonss p {
+    font-size: 34px;
+  }
+
+  .ribbonss-shadow {
+    width: 88%;
+  }
+}
+
+
+ 

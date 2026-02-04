@@ -1,0 +1,282 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   BASE: SMALL MOBILE (default)
+   ===================================================== */
+.hero-sec {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #b9ff5f 0%, #1f8acb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.hero-sec-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  text-align: center;
+}
+
+/* TEXT */
+.hero-sec-text h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-sec-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* TAGS */
+.hero-sec-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* BUTTON */
+
+
+/* IMAGE */
+.hero-sec-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-sec-image img {
+  width: 220px;
+  max-width: 100%;
+}
+
+/* BADGE (mobile-safe) */
+.hero-sec-badge {
+  margin-top: -5px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #3ef7e8, #15a5de);
+  border-radius: 30px;
+  white-space: nowrap;
+
+}
+
+/* =====================================================
+   LARGE MOBILE (≥ 480px)
+   ===================================================== */
+@media (min-width: 480px) {
+  .hero-sec-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-sec-text p {
+    font-size: 16px;
+  }
+
+  .hero-sec-tags {
+    font-size: 18px;
+  }
+
+  .hero-sec-image img {
+    width: 240px;
+  }
+}
+
+/* =====================================================
+   SMALL TABLET (≥ 600px)
+   ===================================================== */
+@media (min-width: 600px) {
+  .hero-sec {
+    padding: 50px 30px;
+  }
+
+  .hero-sec-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-sec-text p {
+    font-size: 17px;
+  }
+
+  .hero-sec-image img {
+    width: 280px;
+  }
+}
+
+/* =====================================================
+   LARGE TABLET (≥ 768px)
+   ===================================================== */
+@media (min-width: 768px) {
+  .hero-sec {
+    padding: 60px 40px;
+  }
+
+  .hero-sec-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-sec-text p {
+    font-size: 18px;
+  }
+
+  .hero-sec-tags {
+    font-size: 22px;
+  }
+
+  .hero-sec-image img {
+    width: 300px;
+  }
+}
+
+/* =====================================================
+   LAPTOP (≥ 992px)
+   ===================================================== */
+@media (min-width: 992px) {
+  .hero-sec-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .hero-sec-text {
+    max-width: 560px;
+  }
+
+  .hero-sec-tags {
+    justify-content: flex-start;
+  }
+
+  .hero-sec-btn {
+    width: auto;
+  }
+}
+
+/* =====================================================
+   DESKTOP (≥ 1200px)
+   ===================================================== */
+@media (min-width: 1200px) {
+  .hero-sec {
+    min-height: 82vh;
+    padding: 0 80px;
+  }
+
+  .hero-sec-text {
+    max-width: 620px;
+  }
+
+  .hero-sec-text h1 {
+    font-size: 54px;
+  }
+
+  .hero-sec-text p {
+    font-size: 20px;
+  }
+
+  .hero-sec-tags {
+    font-size: 28px;
+  }
+
+  .hero-sec-image {
+    position: relative;
+  }
+
+  .hero-sec-image img {
+    width: 400px;
+  }
+
+  /* DESKTOP BADGE – SAFE POSITION */
+  .hero-sec-badge {
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    padding: 10px 22px;
+    margin-top: 0;
+  }
+}
+
+.hero-sec-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 280px;
+  padding: 14px 22px;
+
+  border-radius: 30px;
+  border: 2px solid #e4e1e1;
+
+  background: linear-gradient(180deg, #78dcff, #e5ffca);
+  color: #000;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+/* HOVER (desktop & laptop) */
+.hero-sec-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ACTIVE (click / tap) */
+.hero-sec-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FOCUS (keyboard accessibility) */
+.hero-sec-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 138, 203, 0.4);
+}
+
+/* ================= LARGE MOBILE ================= */
+@media (min-width: 480px) {
+  .hero-sec-btn {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 768px) {
+  .hero-sec-btn {
+    max-width: 260px;
+  }
+}
+
+/* ================= LAPTOP & DESKTOP ================= */
+@media (min-width: 992px) {
+  .hero-sec-btn {
+    width: auto;
+    padding: 14px 34px;
+    font-size: 16px;
+  }
+}
