@@ -26,7 +26,7 @@ const UpcomingWebinar = () => {
 
           <div className="webinar-buttons">
             <a
-              href="https://your-register-link.com"
+              href="https://nimacademy.in/Webinar-registration"
               className="btn primary"
               target="_blank"
               rel="noopener noreferrer"
